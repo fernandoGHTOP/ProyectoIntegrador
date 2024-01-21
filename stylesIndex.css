@@ -1,0 +1,182 @@
+body{
+    padding: 2.5vh 10vw;
+}
+/* header */
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header__logo{
+    width: 20vw;
+    height: 10vh;
+}
+.header .header__navbar{
+    display: flex;
+    gap: 6vw;
+}
+/* hero */
+.main .hero{
+    height: 87.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .hero .hero__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.main .hero .hero__container .hero__container--text{
+    display: flex;
+    flex-direction: column;
+}
+.main .hero .hero__container--botones{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.hero .hero__container--text h1{
+    text-align: center;
+}
+.main .hero .hero__container--botones .heroBoton{
+    width: 22VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--colorRosa);
+    border: 1px solid var(--colorRosa);
+    color: var(--colorBlanco);
+    padding: 2vh 2vw;
+}
+.main .hero .hero__container--botones .heroBoton:last-child{
+    background-color: var(--colorBlanco);
+    color: var(--colorRosa);
+}
+
+.main .hero .hero__img--div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 27.5vw;
+    height: 50vh;
+    overflow: hidden;
+    background-color: var(--colorRosa);
+}
+.main .hero .hero__img--div .img{
+    height: 60vh;
+    width: 25vw;
+}
+/* beneficios*/
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    gap: 10vh;
+}
+.beneficios h1{
+    text-align: center;
+}
+.beneficiosContainer{
+    display: flex;
+    gap: 5vw;
+}
+.beneficiosContainer__card{
+    width:35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vh;
+}
+.beneficiosContainer__card i{
+    font-size: 4vw;
+    color: var(--colorRosa);
+}
+/* shop */
+.shop{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.shop h1{
+    text-align: center;
+}
+.shop__cardContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.shop__card{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+.shop .shop__card--img{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    border-radius: 4px;
+}
+.shop .shop__card--img img{
+    width: 10vw;
+
+}
+.shop__card button{
+    width: 100%;
+    background-color: var(--colorRosa);
+    color: var(--colorBlanco);
+    border: 1px solid var(--colorRosa);
+    padding: 2vh 5vw;
+    border-radius: 4px;
+}
+.shop__card button:last-child{
+    color: var(--colorRosa);
+    background-color: var(--colorBlanco);
+
+
+}
+.shop__card h3{
+    color: var(--colorDinero);
+}
+.shop__card h4{
+    font-size: 1vw;
+}
+.shop__card h5{
+    font-size: 1vw;
+    color: var(--colorDinero);
+}
+/* encargo */
+.encargo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+.encargo .encargoContainer{
+    height: 80%;
+    width: 80%;
+}
+.encargo .encargoContainer__top{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+.encargo .encargoContainer__top--right,
+.encargo .encargoContainer__top--left{
+    width: 50%;
+}
+.encargo .form__imput{
+    width: 100%;
+}
+.encargo .form__imputDos{
+    width: 100%;
+}
