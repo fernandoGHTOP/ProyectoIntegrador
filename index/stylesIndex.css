@@ -1,12 +1,14 @@
 body{
-    padding: 2.5vh 10vw;
+    padding-inline:10vw;
 }
 /* header */
 .header{
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .header .header__logo{
     width: 20vw;
@@ -14,11 +16,11 @@ body{
 }
 .header .header__navbar{
     display: flex;
-    gap: 6vw;
+    gap:4vw;
 }
 /* hero */
 .main .hero{
-    height: 87.5vh;
+    height: 85vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,24 +161,74 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10vh;
+    gap: 5vh;
 }
 .encargo .encargoContainer{
     height: 80%;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
 }
 .encargo .encargoContainer__top{
     display: flex;
     justify-content: space-between;
-    gap: 5vw;
+    gap: 2vw;
 }
 .encargo .encargoContainer__top--right,
 .encargo .encargoContainer__top--left{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
     width: 50%;
+}
+.encargo .encargoContainer__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 .encargo .form__imput{
     width: 100%;
+    height: 5vh;
+
 }
 .encargo .form__imputDos{
     width: 100%;
+    height: 30vh;
+}
+.encargo .encargoContainer__submit{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.encargo .encargoContainer__submit .form__submit{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--colorRosa);
+    color: var(--colorBlanco);
+    border: 1px solid var(--colorRosa);
+    border-radius: 4px;
+}
+/* footer */
+.footer{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .footer__right,
+.footer .footer__left{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.footer .footer__left div{
+    font-size: 1.2vw;
+}
+.footer .footer__right i{
+    font-size: 2vw;
+    color: var(--colorRosa);
 }

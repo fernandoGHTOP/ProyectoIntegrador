@@ -14,6 +14,8 @@ body{
     font-style: light;
     font-size: 1.5vw;
     color: var(--colorNegro);
+    scroll-behavior: smooth;
+
 }
 :root{
     --colorVerde:#89fc00;
@@ -32,6 +34,6 @@ a{
 h1{
     font-family: "blanket", sans-serif;
     font-weight: 400;
-    font-style: light;
+    font-style: normal;
     font-size: 5vw;
 }
