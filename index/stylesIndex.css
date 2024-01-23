@@ -12,12 +12,19 @@ body{
     top: 0;
 }
 .header .header__logo{
-    width: 20vw;
-    height: 10vh;
+    width: 12rem;
 }
 .header .header__navbar{
     display: flex;
+    align-items: center;
     gap:4vw;
+}
+#navbar__burger{
+    display: none;
+}
+.navbar__label--burger i{
+    font-size: 2rem;
+    display: none;
 }
 /* hero */
 .main .hero{
@@ -44,7 +51,7 @@ body{
     text-align: center;
 }
 .main .hero .hero__container--botones .heroBoton{
-    width: 22VW;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,14 +66,14 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 27.5vw;
-    height: 50vh;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
     background-color: var(--colorRosa);
 }
 .main .hero .hero__img--div .img{
-    height: 60vh;
-    width: 25vw;
+    width: 350px;
+    height: 400px;
 }
 /* beneficios*/
 .beneficios{
@@ -91,9 +98,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2.5vh;
+    text-align: center;
 }
 .beneficiosContainer__card i{
-    font-size: 4vw;
+    font-size: 3rem;
     color: var(--colorRosa);
 }
 /* shop */
@@ -108,7 +116,7 @@ body{
 }
 .shop__cardContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .shop__card{
     display: flex;
@@ -119,12 +127,11 @@ body{
 .shop .shop__card--img{
     display: flex;
     justify-content: center;
-    width: 20vw;
+    width: 8rem;
     border-radius: 4px;
 }
 .shop .shop__card--img img{
-    width: 10vw;
-
+    width: 10rem;
 }
 .shop__card button{
     cursor: pointer;
@@ -137,10 +144,10 @@ body{
     color: var(--colorDinero);
 }
 .shop__card h4{
-    font-size: 1vw;
+    font-size:.9rem;
 }
 .shop__card h5{
-    font-size: 1vw;
+    font-size: .9rem;
     color: var(--colorDinero);
 }
 /* encargo */
@@ -206,10 +213,4 @@ body{
     display: flex;
     align-items: center;
     gap: 2vw;
-}
-.footer .footer__left div{
-    font-size: 1.2vw;
-}
-.footer .footer__right i{
-    font-size: 2vw;
 }
