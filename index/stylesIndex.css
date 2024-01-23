@@ -1,5 +1,5 @@
 body{
-    padding-inline:10vw;
+    padding-inline:5vw;
 }
 /* header */
 .header{
@@ -51,7 +51,7 @@ body{
     background-color: var(--colorRosa);
     border: 1px solid var(--colorRosa);
     color: var(--colorBlanco);
-    padding: 2vh 2vw;
+    padding-block: 2vh;
 }
 .main .hero .hero__container--botones .heroBoton:last-child{
     background-color: var(--colorBlanco);
@@ -211,6 +211,7 @@ body{
     color: var(--colorBlanco);
     border: 1px solid var(--colorRosa);
     border-radius: 4px;
+    cursor: pointer;
 }
 /* footer */
 .footer{

@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
-    <link rel="stylesheet" href="stylesGeneral.css">
+    <title>Iniciar sección</title>
+    <link rel="stylesheet" href="/ProyectoIntegrador/stylesGeneral/stylesGeneral.css">
+    <link rel="stylesheet" href="/ProyectoIntegrador/register/register.css">
 </head>
 <body>
-    
+    <div class="containerLogoCortina">
+        <header class="header">
+            <a href="/ProyectoIntegrador/index/index.html"><img src="/ProyectoIntegrador/Img/LogoMiaAllegra.svg" alt="logo" class="header__logo"></a>
+        </header>
+    </div>
+    <form class="form">
+        <h2 class="form__titulo">Registro</h2>
+        <p class="form__p">¿Ya tienes cuenta?<a href="/ProyectoIntegrador/login/login.html" class="form__a"> Inicia sección</a></p>
+        <div class="form__container">
+            <div class="form__grupo">
+                <input type="text" id="mailr" class="form__grupo--input" placeholder="">
+                <label for="mail" class="form__grupo--label">Mail</label>
+            </div>
+            <div class="form__grupo">
+                <input type="text" id="name" class="form__grupo--input" placeholder="">
+                <label for="name" class="form__grupo--label">Nombre</label>
+            </div>
+            <div class="form__grupo">
+                <input type="text" id="lastname" class="form__grupo--input" placeholder="">
+                <label for="lastname" class="form__grupo--label">Apellido</label>
+            </div>
+            <div class="form__grupo">
+                <input type="text" id="user" class="form__grupo--input" placeholder="">
+                <label for="user" class="form__grupo--label">Usuario</label>
+            </div>
+            <div class="form__grupo">
+                <input type="text" id="password" class="form__grupo--input" placeholder="">
+                <label for="password" class="form__grupo--label">Constraseña</label>
+            </div>
+            <div class="form__terminosycondiciones">
+                <input type="checkbox">
+                <p>He podido leer y entiendo la Política de Privacidad y Cookies</p>
+                
+            </div>
+            <input type="submit" class="form__submit" value="Registrate">
+        </div>
+    </form>
 </body>
 </html>

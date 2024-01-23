@@ -2,7 +2,8 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
     padding-inline:10vw;
 }
@@ -13,15 +14,12 @@ body{
     position: absolute;
     top: 0;
     left: 5;
-    z-index: 1;
+    z-index: 0;
 }
 .header{
     height: 15vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
 .header .header__logo{
     width: 20vw;
@@ -32,7 +30,7 @@ body{
     background-color:var(--colorBlanco);
     width: 100%;
     max-width: 500px;
-    padding: 4vh 4vw;
+    padding:4vh 4vw;
     border-radius: 4px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     display: flex;
@@ -87,6 +85,13 @@ body{
     transform-origin: left;
     transition: transform .5s ;
     opacity: 1;
+}
+.form__terminosycondiciones{
+    display: flex;
+    gap: 2vw;
+}
+.form__terminosycondiciones p{
+    font-size: .9vw;
 }
 .form__submit{
     width: 100%;
