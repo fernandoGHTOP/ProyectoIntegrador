@@ -1,5 +1,6 @@
 body{
     padding-inline:5vw;
+    animation: opacity 1s;
 }
 /* header */
 .header{
@@ -48,16 +49,11 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background-color: var(--colorRosa);
-    border: 1px solid var(--colorRosa);
-    color: var(--colorBlanco);
+    border: none;
     padding-block: 2vh;
+    border: 1px solid var(--colorRosa);
+    border-radius: 6px;
 }
-.main .hero .hero__container--botones .heroBoton:last-child{
-    background-color: var(--colorBlanco);
-    color: var(--colorRosa);
-}
-
 .main .hero .hero__img--div{
     display: flex;
     align-items: center;
@@ -131,18 +127,11 @@ body{
 
 }
 .shop__card button{
+    cursor: pointer;
     width: 100%;
-    background-color: var(--colorRosa);
-    color: var(--colorBlanco);
-    border: 1px solid var(--colorRosa);
     padding: 2vh 5vw;
-    border-radius: 4px;
-}
-.shop__card button:last-child{
-    color: var(--colorRosa);
-    background-color: var(--colorBlanco);
-
-
+    border-radius: 6px;
+    border: 1px solid var(--colorRosa);
 }
 .shop__card h3{
     color: var(--colorDinero);
@@ -197,20 +186,12 @@ body{
     width: 100%;
     height: 30vh;
 }
-.encargo .encargoContainer__submit{
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.encargo .encargoContainer__submit .form__submit{
+.encargo .form__submit{
+    margin-top: 2vh;
     height: 10vh;
     width: 100%;
-    background-color: var(--colorRosa);
-    color: var(--colorBlanco);
     border: 1px solid var(--colorRosa);
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
 }
 /* footer */
@@ -231,5 +212,4 @@ body{
 }
 .footer .footer__right i{
     font-size: 2vw;
-    color: var(--colorRosa);
 }

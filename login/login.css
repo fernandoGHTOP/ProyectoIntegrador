@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-inline:10vw;
+    animation: opacity 1s;
 }
 /* header */
 .containerLogoCortina{
@@ -90,11 +91,10 @@ body{
 }
 .form__submit{
     width: 100%;
-    color: var(--colorBlanco);
-    background-color: var(--colorRosa);
     border: none;
     padding-block: 2vh;
-    border-radius: 4px;
+    border: 1px solid var(--colorRosa);
+    border-radius: 6px;
     cursor: pointer;
     font-family: "quasimoda", sans-serif;
 }
