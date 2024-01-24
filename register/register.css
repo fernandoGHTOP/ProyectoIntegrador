@@ -10,7 +10,7 @@ body{
 }
 /* header */
 .containerLogoCortina{
-    width: 90vw;
+    width: 80vw;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -23,35 +23,44 @@ body{
     align-items: center;
 }
 .header .header__logo{
-    width: 20vw;
-    height: 10vh;
+    width: 16rem;
 }
 /* formulario */
 .form{
     background-color:var(--colorBlanco);
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
+    height: 100%;
+    max-height: 400px;
     padding:4vh 4vw;
     border-radius: 4px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     gap: 5vh;
     z-index: 2;
+}
+.form__containerUno{
+    display: flex;
+    flex: 30%;
+    text-align: center;
+    flex-direction: column;
+    gap: 4vh;
+
 }
 .form__titulo{
     font-family: "blanket", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 4vw;
-    padding-block: 2vh;
 }
 .form__a{
     color: var(--colorRosa);
 }
-.form__container{
+.form__containerDos{
+    flex: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -94,11 +103,19 @@ body{
 .form__terminosycondiciones p{
     font-size: .9vw;
 }
+.form__containerTres{
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#proyect__submi--register{
+    display: none;
+}
 .form__submit{
-    width: 100%;
     border: none;
     border: 1px solid var(--colorRosa);
-    padding-block: 2vh;
+    padding:2vh;
     border-radius: 6px;
     cursor: pointer;
     font-family: "quasimoda", sans-serif;

@@ -16,21 +16,18 @@
         <input type="checkbox" id="navbar__burger">
         <ul class="header__navbar">
             <li class="items hvr-underline-from-center"><a href="/ProyectoIntegrador/login/login.html">Iniciar sección</a></li>
-            <li><a href="#shop" class="items hvr-underline-from-center">Shop</a></li>
-            <li class="items hvr-underline-from-center"><a href="#contactame">Contactame</a></li>
-            <li>
-                <label for="navbar__label--cart"><i class="fa-solid fa-cart-shopping hover-pink"></i></label>
-                <input type="checkbox" id="navbar__label--cart">
-                <div class="navbar__cart">
-                    <div class="cart__resumen">
-                        <h2>Resumen de compra</h2>
-                    </div>
-                    <div class="cart__contenido">
-                        <p>Aquí veras los importes de tu compra una vez que agregues productos.</p>
-                    </div>
-                    <a href="#shop" class="hvr-underline-from-center">Descubrir productos</a>
+            <label for="navbar__label--cart"><i class="fa-solid fa-cart-shopping hover-pink"></i></label>
+            <input type="checkbox" id="navbar__label--cart">
+            <div class="navbar__cart">
+                <div class="cart__resumen">
+                    <h2>Resumen de compra</h2>
                 </div>
-            </li>
+                <div class="cart__contenido">
+                    <p>Aquí veras los importes de tu compra una vez que agregues productos.</p>
+                </div>
+                <a href="#shop" class="hvr-shutter-out-vertical-two">Descubrir productos</a>
+            </div>
+            <div class="overlay"></div>
         </ul>
     </header>
     <main class="main" id="#main">
@@ -119,7 +116,8 @@
                     <h2>Cuentame los detalles</h2>
                     <textarea name="text" id="encargo__text" cols="30" rows="10" class="form__imputDos"></textarea>
                 </div>
-                <input type="submit" class="form__submit hvr-shutter-out-vertical-two" value="Hagamoslo">
+                <label for="proyect__submit" class="label__proyect--submit hvr-shutter-out-vertical-one">Hagamoslo</label>
+                <input type="checkbox" id="proyect__submit">
             </div>
         </section>
     </main>

@@ -15,9 +15,11 @@
         </header>
     </div>
     <form class="form">
-        <h2 class="form__titulo">Registro</h2>
-        <p class="form__p">¿Ya tienes cuenta?<a href="/ProyectoIntegrador/login/login.html" class="form__a"> Inicia sección</a></p>
-        <div class="form__container">
+        <div class="form__containerUno">
+            <h2 class="form__titulo">Registro</h2>
+            <p class="form__p">¿Ya tienes cuenta?<a href="/ProyectoIntegrador/login/login.html" class="form__a"> Inicia sección</a></p>
+        </div>
+        <div class="form__containerDos">
             <div class="form__grupo">
                 <input type="text" id="mailr" class="form__grupo--input" placeholder="">
                 <label for="mail" class="form__grupo--label">Mail</label>
@@ -42,7 +44,10 @@
                 <input type="checkbox">
                 <p>He podido leer y entiendo la Política de Privacidad y Cookies</p>
             </div>
-            <input type="submit" class="form__submit hvr-shutter-out-vertical-two" value="Registrate">
+        </div>
+        <div class="form__containerTres">
+            <label for="proyect__submit" class="form__submit hvr-shutter-out-vertical-one">Registrate</label>
+            <input type="checkbox" id="proyect__submi--register">
         </div>
     </form>
 </body>

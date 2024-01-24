@@ -9,7 +9,7 @@ body{
 }
 /* header */
 .containerLogoCortina{
-    width: 90vw;
+    width: 80vw;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -21,18 +21,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
 .header .header__logo{
-    width: 20vw;
-    height: 10vh;
+    width: 16rem;
 }
 /* formulario */
 .form{
     background-color:var(--colorBlanco);
     width: 100%;
     max-width: 500px;
+    height: 100%;
+    max-height: 400px;
     padding: 4vh 4vw;
     border-radius: 4px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
@@ -89,10 +88,14 @@ body{
     transition: transform .5s ;
     opacity: 1;
 }
+#proyect__submi--login{
+    display: none;
+}
 .form__submit{
-    width: 100%;
     border: none;
-    padding-block: 2vh;
+    text-align: center;
+    width: 100%;
+    padding: 2vh;
     border: 1px solid var(--colorRosa);
     border-radius: 6px;
     cursor: pointer;
