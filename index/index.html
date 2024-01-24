@@ -11,19 +11,31 @@
 </head>
 <body>
     <header class="header">
-        <a href="/ProyectoIntegrador/index/index.html"><img src="/ProyectoIntegrador/Img/LogoMiaAllegra.svg" alt="logo" class="header__logo"></a>
-        <input type="checkbox" id="navbar__burger">
+        <a href="#hero"><img src="/ProyectoIntegrador/Img/LogoMiaAllegra.svg" alt="logo" class="header__logo"></a>
         <label for="navbar__burger" class="navbar__label--burger"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="navbar__burger">
         <ul class="header__navbar">
             <li class="items hvr-underline-from-center"><a href="/ProyectoIntegrador/login/login.html">Iniciar sección</a></li>
             <li><a href="#shop" class="items hvr-underline-from-center">Shop</a></li>
             <li class="items hvr-underline-from-center"><a href="#contactame">Contactame</a></li>
-            <li><a href="#"><i class="fa-solid fa-cart-shopping hover-pink"></i></a></li>
+            <li>
+                <label for="navbar__label--cart"><i class="fa-solid fa-cart-shopping hover-pink"></i></label>
+                <input type="checkbox" id="navbar__label--cart">
+                <div class="navbar__cart">
+                    <div class="cart__resumen">
+                        <h2>Resumen de compra</h2>
+                    </div>
+                    <div class="cart__contenido">
+                        <p>Aquí veras los importes de tu compra una vez que agregues productos.</p>
+                    </div>
+                    <a href="#shop" class="hvr-underline-from-center">Descubrir productos</a>
+                </div>
+            </li>
         </ul>
     </header>
     <main class="main" id="#main">
         <!-- hero -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__container">
                 <div class="hero__container--text">
                     <h1>Elige tu estilo</h1>
@@ -114,7 +126,6 @@
     <footer class="footer">
         <div class="footer__left">
             <div>San Juan, Argentina</div>
-            <div> 264-XXXXXXX</div>
         </div>
         <div class="footer__right">
             <a href="#"><i class="fa-brands fa-whatsapp hover-pink"></i></a>

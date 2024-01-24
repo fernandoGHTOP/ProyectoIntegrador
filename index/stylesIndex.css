@@ -1,6 +1,6 @@
 body{
     padding-inline:5vw;
-    animation: opacity 1s;
+    animation: opacity .5s;
 }
 /* header */
 .header{
@@ -10,21 +10,66 @@ body{
     align-items: center;
     position: sticky;
     top: 0;
+    gap: 4vw;
+    z-index: 3;
 }
 .header .header__logo{
-    width: 12rem;
+    width: 16rem;
 }
 .header .header__navbar{
     display: flex;
     align-items: center;
     gap:4vw;
 }
+#navbar__label--cart,
 #navbar__burger{
     display: none;
+}
+#navbar__label--cart:checked +.navbar__cart{
+display: flex;
+border: .5px solid var(--colorNegro);
+
 }
 .navbar__label--burger i{
     font-size: 2rem;
     display: none;
+}
+.navbar__cart{
+    width: 300px;
+    height: 70vh;
+    position: absolute;
+    top: 15vh;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--colorBlanco);
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    display: none;
+
+}
+.navbar__cart::-webkit-scrollbar{
+    display: none;
+}
+.navbar__cart .cart__resumen{
+    width: 100%;
+    padding: 20px;
+    border-bottom: .5px solid var(--colorNegro);
+}
+.navbar__cart .cart__contenido{
+    padding: 5px;
+}
+.navbar__cart .cart__contenido p{
+    font-size: .9rem;
+    opacity: .5;
+}
+.navbar__cart a{
+    border-top: .5px solid var(--colorNegro);
+    width: 100%;
+    padding: 20px;
 }
 /* hero */
 .main .hero{

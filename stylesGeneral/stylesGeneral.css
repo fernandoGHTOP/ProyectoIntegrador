@@ -17,7 +17,6 @@ body{
     font-size: 1.1rem;
     color: var(--colorNegro);
     scroll-behavior: smooth;
-
 }
 :root{
     --colorVerde:#89fc00;
@@ -32,6 +31,9 @@ li{
 a{
     text-decoration: none;
     color: var;
+}
+i{
+    cursor: pointer;
 }
 h1{
     font-family: "blanket", sans-serif;

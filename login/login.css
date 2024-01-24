@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-inline:10vw;
-    animation: opacity 1s;
+    animation: opacity .5s;
 }
 /* header */
 .containerLogoCortina{
