@@ -8,14 +8,35 @@
     <link rel="stylesheet" href="stylesIndex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/ProyectoIntegrador/animaciones/animaciones.css">
+    <link rel="stylesheet" href="/ProyectoIntegrador/mediaqueris/mediaqueris.css">
 </head>
 <body>
+    <div class="background"></div>
+    <div class="backgroundDos"></div>
+    <!-- header -->
     <header class="header">
-        <a href="#hero"><img src="/ProyectoIntegrador/Img/LogoMiaAllegra.svg" alt="logo" class="header__logo"></a>
-        <label for="navbar__burger" class="navbar__label--burger"><i class="fa-solid fa-bars"></i></label>
-        <input type="checkbox" id="navbar__burger">
-        <ul class="header__navbar">
-            <li class="items hvr-underline-from-center"><a href="/ProyectoIntegrador/login/login.html">Iniciar sección</a></li>
+        <!-- right -->
+        <div class="header__containerRight">
+            <a href="#hero"><img src="/ProyectoIntegrador/Img/LogoMiaAllegra.svg" alt="logo" class="header__logo"></a>
+            <label for="navbar__burger--input" class="navbar__label--burger"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="navbar__burger--input">
+            <div class="overlay"></div>
+            <div class="navbar__burger">
+                <ul class="header__navbarBurger">
+                    <li><a href="/ProyectoIntegrador/login/login.html" class="items hvr-underline-from-center">Iniciar sección</a></li>
+                    <li><a href="#shop" class="items hvr-underline-from-center"> Shop</a></li>
+                </ul>
+                <div class="logoContainerBurger">
+                    <a href="#hero"><img src="/ProyectoIntegrador/Img/LogoMiaAllegra.svg" alt="logo" class="header__logoBurger"></a>
+                </div>
+            </div>
+        </div>
+        <!-- left -->
+        <div class="header__containerLeft">
+            <ul class="header__navbar">
+                <li class="items hvr-underline-from-center"><a href="/ProyectoIntegrador/login/login.html">Iniciar sección</a></li>
+                <li class="items hvr-underline-from-center"><a href="#shop"> Shop</a></li>
+            </ul>
             <label for="navbar__label--cart"><i class="fa-solid fa-cart-shopping hover-pink"></i></label>
             <input type="checkbox" id="navbar__label--cart">
             <div class="navbar__cart">
@@ -28,8 +49,9 @@
                 <a href="#shop" class="hvr-shutter-out-vertical-two">Descubrir productos</a>
             </div>
             <div class="overlay"></div>
-        </ul>
+        </div>
     </header>
+    <!-- main -->
     <main class="main" id="#main">
         <!-- hero -->
         <section class="hero" id="hero">

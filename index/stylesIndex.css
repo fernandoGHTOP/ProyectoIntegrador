@@ -1,10 +1,35 @@
 body{
     overflow-x: hidden;
 }
+/* background */
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: .5;
+    background-color: #ffffff;
+    background-size: 18px 18px;
+    background-image:  repeating-linear-gradient(0deg, #ff5d8f, #ff5d8f 0.9px, #ffffff 0.9px, #ffffff);
+    z-index: -1;
+}
+.backgroundDos{
+    position: absolute;
+    top: 265vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: .5;
+    background-color: #ffffff;
+    background-size: 18px 18px;
+    background-image:  repeating-linear-gradient(0deg, #ff5d8f, #ff5d8f 0.9px, #ffffff 0.9px, #ffffff);
+    z-index: -1;
+}
 /* header */
 .header{
     padding-inline: 10vw;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,35 +39,87 @@ body{
     z-index: 2;
     background-color: var(--colorBlanco);
 }
+/* header__right */
+.header__containerRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
 .header .header__logo{
-    width: 16rem;
+    width: 10rem;
+}
+/* header__left */
+.header__containerLeft{
+    display: flex;
+    gap: 4vw;
 }
 .header .header__navbar{
     display: flex;
     align-items: center;
     gap:4vw;
 }
+.navbar__label--burger,
 #navbar__label--cart,
-#navbar__burger{
+#navbar__burger--input{
     display: none;
 }
+/* :checked */
+
 #navbar__label--cart:checked +.navbar__cart{
     transform: translate(0);
     transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+#navbar__burger--input:checked~.overlay,
 #navbar__label--cart:checked ~.overlay{
     display: block;
 }
-.navbar__label--burger i{
-    font-size: 2rem;
-    display: none;
+
+#navbar__burger--input:checked ~.navbar__burger{
+    transform: translate(0);
+    transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.navbar__cart{
-    max-width: 500px;
-    width: 1005;
-    height: 70vh;
+/* burger */
+.navbar__burger{
+    padding: 2vh 2vw;
+    background-color: var(--colorBlanco);
+    max-width: 290px;
+    width: 100%;
+    height: 89vh;
     position: absolute;
-    top: 15vh;
+    top: 10vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: .5px solid var(--colorNegro);
+    border-radius: 6px;
+    transform: translate(-200%);
+    transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.header__navbarBurger{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.logoContainerBurger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.header__logoBurger{
+    width: 10rem;
+}
+
+/* cart */
+.navbar__cart{
+    max-width: 290px;
+    width: 100%;
+    height: 89vh;
+    position: absolute;
+    top: 10vh;
     right:10vw;
     display: flex;
     flex-direction: column;
@@ -80,10 +157,11 @@ body{
 }
 /* hero */
 .main .hero{
-    height: 85vh;
+    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: .5 solid var(--colorNegro);
 }
 .main .hero .hero__container{
     display: flex;
@@ -95,7 +173,8 @@ body{
     flex-direction: column;
 }
 .hero .hero__container--text h1{
-    text-align: center;
+    -webkit-text-stroke: .9px var(--colorRosa);
+    color: var(--colorBlanco);
   }
 .main .hero .hero__container--botones{
     display: flex;
@@ -111,7 +190,7 @@ body{
     border-radius: 4px;
     border: none;
     padding-block: 2vh;
-    border: 1px solid var(--colorRosa);
+    border: .9px solid var(--colorRosa);
     border-radius: 6px;
 }
 .main .hero .hero__img--div{
@@ -122,11 +201,12 @@ body{
     width: 350px;
     height: 350px;
     overflow: hidden;
-    background-color: var(--colorRosa);
+    background-color:var(--colorBlanco);
+    border: .9px solid var(--colorRosa);
 }
 .main .hero .hero__img--div .img{
     width: 350px;
-    height: 400px;
+    height: 350px;
 }
 /* beneficios*/
 .beneficios{
@@ -136,9 +216,6 @@ body{
     justify-content: center;
     height: 50vh;
     gap: 10vh;
-}
-.beneficios h1{
-    text-align: center;
 }
 .beneficiosContainer{
     display: flex;
@@ -166,9 +243,6 @@ body{
     justify-content:flex-start;
     align-items: center;
     gap: 5vh;
-}
-.shop h1{
-    text-align: center;
 }
 .shop__cardContainer{
     display: flex;
@@ -216,7 +290,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5vh;
-    border-bottom: .5px solid var(--colorNegro);
+}
+.encargo h1{
+    -webkit-text-stroke: .9px var(--colorRosa);
+    color: var(--colorBlanco);
 }
 .encargo .encargoContainer{
     height: 80%;
